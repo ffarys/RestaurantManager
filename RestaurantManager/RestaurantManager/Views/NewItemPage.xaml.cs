@@ -1,0 +1,21 @@
+﻿using RestaurantManager.Models;
+using RestaurantManager.ViewModels;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace RestaurantManager.Views
+{
+    public partial class NewItemPage : ContentPage
+    {
+        public Item Item { get; set; }
+
+        public NewItemPage()
+        {
+            InitializeComponent();
+            BindingContext = new NewItemViewModel();
+        }
+    }
+}
